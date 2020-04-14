@@ -115,7 +115,7 @@ void exec(int argc, char *argv[]) {
 	  printf("Error: unable to load image");
 	  exit(1);
 	}
-	struct Image *out = plugin.transform_image(source, plugin.parse_arguments(index - 4, args));
+	struct Image *out = plugin.transform_image(source, plugin.parse_arguments(index - 5, args));
 	if (out == NULL) {
 	  printf("Error: unable to output image");
 	  exit(1);
